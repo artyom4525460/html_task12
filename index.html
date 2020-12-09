@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
+        <meta charset="utf-8">
+        <link href="./css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="header">
+            <div class="title">
+                <div class="arrow-header">
+                    <img src="./images/arrow-left.svg" alt="arrow-left" onclick="alert('Back Button is working')">
+                </div>
+                <div class="location">
+                    <img src="./images/location_white.svg" class="marker-img" alt="location_white">
+                    <span>Mazikin Street, New York</span>
+                    <a id="select-location"  onclick="alert('Drop Down Button is working')">
+                        <img src="./images/arrow-select.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="tab" onclick="alert('One Call Tab is working')">One Call</div>
+                <div class="tab active" onclick="alert('Near Me Tab is working')">Near Me</div>
+                <div class="tab" onclick="alert('Promotions Tab is working')">Promotions</div>
+            </div>
+        </section>
+        <section class="map-section">
+            <div id="map">
+
+            </div>
+            <div class="map-location-button">
+                <img src="./images/pointer.svg" alt="">
+            </div>
+        </section>
+        <section class="popular">
+            <div class="line-button"></div>
+            <div class="popular-block" id="slider-popular">
+                <div class="popular-item">
+                    <div class="top-part">
+                        <img src="./images/image.jpg" alt="bakery">
+                        <div class="popular-item-distance">
+                            2.5 mile
+                        </div>
+                    </div>
+                    <div class="bottom-part">
+                        <div class="popular-item-category">
+                            Groceries
+                        </div>
+                        <div class="popular-item-title">
+                            A.R.Trading Co
+                        </div>
+                        <div class="popular-item-location">
+                            <img src="./images/baloon.svg" alt="baloon">
+                            <span>258 Mazikin Street, New York</span>
+                        </div>
+                        <div class="call-button popular-item-phone" onclick="alert('Call Button is working')">
+                            <img src="./images/phone.svg" alt="phone">
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-item">
+                    <div class="top-part">
+                        <img src="./images/image.jpg" alt="bakery">
+                        <div class="popular-item-distance">
+                            2.5 mile
+                        </div>
+                    </div>
+                    <div class="bottom-part">
+                        <div class="popular-item-category">
+                            Groceries
+                        </div>
+                        <div class="popular-item-title">
+                            A.R.Trading Co
+                        </div>
+                        <div class="popular-item-location">
+                            <img src="./images/baloon.svg" alt="baloon">
+                            <span>258 Mazikin Street, New York</span>
+                        </div>
+                        <div class="call-button popular-item-phone" onclick="alert('Call Button is working')">
+                            <img src="./images/phone.svg" alt="phone">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script defer src="./js/map.js"></script>
+        <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKDRayfDLyjVxpYMwP0xLOiZztX-YZZg8&callback=initMap">
+        </script>
+    </body>
+</html>

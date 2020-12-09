@@ -1,0 +1,119 @@
+/*
+    POPULAR
+*/
+
+.popular{
+    padding: 110px 70px 0;
+    margin-top: -80px;
+    border-radius: 80px;
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: $max-width){
+        padding: 9.77vw 6.22vw 0;
+        margin-top: -7.11vw;
+        border-radius: 7.11vw;
+    }
+    .popular-item{
+        width: 100%;
+        border-radius: 30px;
+        filter: drop-shadow(0px 3px 23px rgba(0,0,0,0.08));
+        background-color: #ffffff;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 50px;
+        @media screen and (max-width: $max-width){
+            border-radius: 2.66vw;
+            filter: drop-shadow(0px 0.26vw 2.04vw rgba(0,0,0,0.08));
+            margin-bottom: 4.44vw;
+        }
+    }
+    .top-part{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .popular-item-distance{
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            color: #fff;
+            background: rgba(255,255,255,0.2);
+            padding: 23px;
+            border-radius: 10px;
+            right: 30px;
+            bottom: 32px;
+            @media screen and (max-width: $max-width){
+                font-size: 2.66vw;
+                padding: 2.04vw;
+                border-radius: 0.88vw;
+                right: 2.66vw;
+                bottom: 2.84vw;
+            }
+        }
+    }
+    .bottom-part{
+        position: relative;
+        padding: 20px 30px 40px;
+        @media screen and (max-width: $max-width){
+            padding: 1.77vw 2.66vw 3.55vw;
+        }
+    }
+    .popular-item-category{
+        font-size: 30px;
+        font-weight: bold;
+        color: $blue;
+        @media screen and (max-width: $max-width){
+            font-size: 2.66vw;
+        }
+    }
+    .popular-item-title{
+        font-size: 50px;
+        color: #292929;
+        font-weight: bold;
+        @media screen and (max-width: $max-width){
+            font-size: 4.44vw;
+        }
+    }
+    .popular-item-location{
+        font-size: 32px;
+        color: #292929;
+        font-weight: 500;
+        opacity: 0.8;
+        margin-top: 10px;
+        @media screen and (max-width: $max-width){
+            font-size: 2.84vw;
+            margin-top: 0.88vw;
+        }
+        img{
+            margin-bottom: -5px;
+            display: initial;
+            width: 31px;
+            @media screen and (max-width: $max-width){
+                width: 2.75vw;
+            }
+        }
+    }
+    .popular-item-phone{
+        width: 138px;
+        height: 138px;
+        border-radius: 70px;
+        position: absolute;
+        top: 30px;
+        right: 45px;
+        padding: 0;
+        @media screen and (max-width: $max-width){
+            width: 12.26vw;
+            height: 12.26vw;
+            right: 4vw;
+            top: 2.66vw;
+        }
+        img{
+            margin: 0;
+        }
+    }
+    .slick-list{
+        overflow: visible;
+    }
+}

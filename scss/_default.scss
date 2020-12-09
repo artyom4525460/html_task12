@@ -1,0 +1,63 @@
+/*
+    DEFAULT
+*/
+
+$max-width: 1125px;
+
+/* colors: */
+$blue: #2f89fc;
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #fdfdfd;
+    font-family: "Gilroy", Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    font-size: 40px;
+    color: #292929;
+    @media screen and (max-width: $max-width){
+        font-size: 3.55vw;
+    }
+}
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+section{
+    padding: 0 55px;
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+    background-color: #fdfdfd;
+    box-sizing: border-box;
+    @media screen and (max-width: $max-width){
+        padding: 0 4.88vw;
+    }
+}
+
+
+.title{
+    font-size: 60px;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 0 20px;
+    @media screen and (max-width: $max-width){
+        font-size: 5.33vw;
+        padding: 0.88vw 0 1.77vw;
+    }
+}
+
+*{
+    outline: none;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    color: $blue;
+    text-decoration: none;
+}
