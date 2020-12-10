@@ -1,9 +1,9 @@
 .header{
     background-color: $blue;
-    padding-top: 170px;
+    padding-top: 50;
     width: 100%;
     @media screen and (max-width: $max-width){
-        padding-top: 15.11vw;
+        padding-top: 4.44vw;
     }
     .menu{
         display: flex;

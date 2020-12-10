@@ -3,10 +3,10 @@
 */
 
 .map-section{
-    height: 940px;
+    height: 850px;
     position: relative;
     @media screen and (max-width: $max-width){
-        height: 83.55vw;
+        height: 75.55vw;
     }
     .map-location-button{
         width: 144px;
@@ -32,6 +32,10 @@
         img{
             width: 76px;
             height: 76px;
+            @media screen and (max-width: $max-width){
+                width: 6.75vw;
+                height: 6.75vw;
+            }
         }
     }
     .controls-block{

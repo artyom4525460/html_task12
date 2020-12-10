@@ -1,5 +1,5 @@
 var map, marker, circle;
-var latLng = {lat: 43.69, lng: -79.40};
+var latLng = {lat: 43.67, lng: -79.38};
 
 function initMap() {
 
@@ -19,7 +19,7 @@ function initMap() {
 
   map = new google.maps.Map(document.getElementById("map"), {
     center: latLng,
-    zoom: 12,
+    zoom: 11,
     disableDefaultUI: true,
     scaledSize: new google.maps.Size(10, 10),
     origin: new google.maps.Point(0,0), // origin
